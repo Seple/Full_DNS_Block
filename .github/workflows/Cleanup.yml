@@ -1,8 +1,8 @@
 name: Cleanup Git History
 
 on:
-  schedule:
-    #- cron: "0 0 1 * *"  # Uruchamiaj 1. dnia każdego miesiąca
+  # schedule:
+    # - cron: "0 0 1 * *"  # Uruchamiaj 1. dnia każdego miesiąca
   workflow_dispatch:
 
 jobs:
