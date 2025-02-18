@@ -16,7 +16,6 @@ While this script aggressively blocks unwanted content, the following DNS blockl
 
 A collection of popular filter lists for blocking ads, malware, phishing, and other threats.
 
-### 🔹 General Ad Filters
 - **1Hosts Pro**  
   [🔗 Link](https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Pro/adblock.txt)
 - **Hagezi Ultimate**  
