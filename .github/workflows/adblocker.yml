@@ -42,7 +42,7 @@ jobs:
       - name: Force delete old workflow runs
         run: |
           gh auth setup-git
-          RUNS_TO_DELETE=$(gh run list --limit 100 --json databaseId --jq '.[5:] | .[].databaseId')
+          RUNS_TO_DELETE=$(gh run list --limit 100 --json databaseId --jq '.[48:] | .[].databaseId')
           if [[ -n "$RUNS_TO_DELETE" ]]; then
             echo "$RUNS_TO_DELETE" | xargs -I {} gh run delete {}
           else
