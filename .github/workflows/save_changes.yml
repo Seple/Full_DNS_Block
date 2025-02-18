@@ -1,7 +1,7 @@
 name: Save Custom Changes
 
 on:
-  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+  workflow_dispatch:
 
 jobs:
   save:
