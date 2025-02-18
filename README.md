@@ -31,8 +31,6 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt)
 - **AdGuard DNS filter**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt)
-
-### 🔹 Anti-Malware & Phishing Filters
 - **Malicious URL Blocklist (URLHaus)**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt)
 - **ShadowWhisperer's Malware List**  
@@ -45,16 +43,12 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt)
 - **Phishing Army**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt)
-
-### 🔹 Regional & Specialized Filters
 - **POL: Polish filters for Pi-hole**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt)
 - **Dandelion Sprout's Game Console Adblock List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt)
 - **Perflyst & Dandelion Sprout's Smart-TV Blocklist**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt)
-
-### 🔹 HaGeZi Filters
 - **HaGeZi's DynDNS Blocklist**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt)
 - **HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass**  
@@ -69,8 +63,6 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
   [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock.txt)
 - **HaGeZi's Threat Intelligence Feeds DNS Blocklist**  
   [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt)
-
-### 🔹 Additional Privacy & Tracking Filters
 - **AdGuard Tracking Protection filter**  
   [🔗 Link](https://filters.adtidy.org/extension/ublock/filters/3.txt)
 - **EasyPrivacy**  
