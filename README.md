@@ -12,9 +12,8 @@ This script simply automates their retrieval and merging to enhance aggressivene
 
 ## 📜 Filter List Collection
 
-While this script aggressively blocks unwanted content, the following DNS blocklists have been carefully selected to provide comprehensive protection against ads, trackers, malware, and other malicious domains. These lists are sourced from reputable providers and regularly updated to ensure optimal security.
+While this script aggressively blocks unwanted content, the lists below are a collection of popular filter lists designed to provide comprehensive protection against ads, trackers, malware, and other malicious domains. These lists come from reputable providers and are regularly updated to ensure optimal security.
 
-A collection of popular filter lists for blocking ads, malware, phishing, and other threats.
 
 - **1Hosts Pro**  
   [🔗 Link](https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Pro/adblock.txt)
