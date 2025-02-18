@@ -1,0 +1,64 @@
+name: Cleanup Git History
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"  # Uruchamiaj 1. dnia każdego miesiąca
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write  # Uprawnienia do usuwania branchy i artefaktów
+
+    steps:
+      - name: Checkout repository with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Pobieramy całą historię repozytorium
+
+      - name: Check if there are any file changes
+        run: |
+          git diff --quiet && git diff --staged --quiet && echo "✅ Brak zmian, pomijam reset historii." && exit 0
+
+      - name: Reset Git history
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git checkout --orphan latest_branch  # Tworzy nową, pustą gałąź
+          git add -A  # Dodaje wszystkie pliki
+          git commit -m "🔥 Reset history: Usunięto stare commity"  # Tworzy nowy commit
+          git branch -D main  # Usuwa starą gałąź main
+          git branch -m main  # Zmienia nową gałąź na main
+          git push --force origin main  # Wymusza nadpisanie repo
+
+      - name: Cleanup cache
+        run: |
+          echo "🧹 Czyszczenie cache..."
+          rm -rf /home/runner/.cache/pip
+          rm -rf /home/runner/work/_temp/*
+
+      - name: Delete old branches
+        run: |
+          git fetch --prune
+          BRANCHES_TO_DELETE=$(git branch -r --merged | grep -v "main" | sed 's/origin\///')
+          if [[ -n "$BRANCHES_TO_DELETE" ]]; then
+            echo "🗑️ Usuwam stare branche..."
+            echo "$BRANCHES_TO_DELETE" | xargs -I {} git push origin --delete {}
+          else
+            echo "✅ Brak starych branchy do usunięcia."
+          fi
+
+      - name: Delete old artifacts
+        run: |
+          gh auth setup-git
+          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/artifacts --jq '.artifacts[].id')
+          if [[ -n "$ARTIFACTS" ]]; then
+            echo "🗑️ Usuwam stare artefakty..."
+            echo "$ARTIFACTS" | xargs -I {} gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE
+          else
+            echo "✅ Brak artefaktów do usunięcia."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

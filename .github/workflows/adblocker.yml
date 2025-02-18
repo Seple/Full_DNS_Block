@@ -1,0 +1,52 @@
+name: Generate AdBlock List
+
+on:
+  schedule:
+    - cron: '0 */1 * * *'  # Co godzinę
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write  # 🔥 Uprawnienia do zarządzania workflow runs
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run the script
+        run: python main.py
+
+      - name: Commit only if files changed
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add Optimization_suggestion.txt Full_DNS_Block.txt
+          if ! git diff --staged --quiet; then
+            git commit -m "Update blocklist files"
+            git push origin main
+          fi
+
+      - name: Force delete old workflow runs
+        run: |
+          gh auth setup-git
+          RUNS_TO_DELETE=$(gh run list --limit 100 --json databaseId --jq '.[5:] | .[].databaseId')
+          if [[ -n "$RUNS_TO_DELETE" ]]; then
+            echo "$RUNS_TO_DELETE" | xargs -I {} gh run delete {}
+          else
+            echo "✅ Brak workflow runs do usunięcia."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
