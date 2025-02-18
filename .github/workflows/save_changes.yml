@@ -1,0 +1,19 @@
+name: Save Custom Changes
+
+on:
+  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Commit new changes as base files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "📌 Zapisano nowe pliki jako domyślne"
+          git push origin main
