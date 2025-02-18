@@ -2,14 +2,14 @@ name: Keep GitHub Actions Active
 
 on:
   schedule:
-    - cron: "0 0 * * 1"  # Uruchamiaj raz w tygodniu (każdy poniedziałek)
+    - cron: "0 0 * * 1"
   workflow_dispatch:
 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Upewnia się, że można commitować
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -29,5 +29,3 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git commit --allow-empty -m "Keep GitHub Actions alive"
           git push origin main
-
-
