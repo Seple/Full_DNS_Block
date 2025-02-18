@@ -4,7 +4,7 @@ This script is designed for users who want maximum control over their network se
 Perfect for users who want to take full control of their network security 🔒💻
 # ⚠️ Important ⚠️
 This script does not create its own blocklists. Instead, it relies on publicly available lists maintained by external authors.
-All rights to these lists belong to their respective creators❗
+**All rights to these lists belong to their respective creators**❗
 This script simply automates their retrieval and merging to enhance aggressiveness while reducing the final file size for practical use.
 
 
@@ -12,7 +12,7 @@ This script simply automates their retrieval and merging to enhance aggressivene
 
 ## 📜 Filter List Collection
 
-While this script aggressively blocks unwanted content, the following DNS blocklists have been carefully selected to provide **comprehensive protection** against ads, trackers, malware, and other malicious domains. These lists are sourced from reputable providers and regularly updated to ensure optimal security.
+While this script aggressively blocks unwanted content, the following DNS blocklists have been carefully selected to provide comprehensive protection against ads, trackers, malware, and other malicious domains. These lists are sourced from reputable providers and regularly updated to ensure optimal security.
 
 A collection of popular filter lists for blocking ads, malware, phishing, and other threats.
 
