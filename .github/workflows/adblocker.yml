@@ -2,14 +2,14 @@ name: Generate AdBlock List
 
 on:
   schedule:
-    - cron: '0 */1 * * *'  # Co godzinę
+    - cron: '0 */1 * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      actions: write  # 🔥 Uprawnienia do zarządzania workflow runs
+      actions: write
       contents: write
 
     steps:
