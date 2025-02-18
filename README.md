@@ -25,7 +25,7 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt)
 - **Peter Lowe's Blocklist**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
-- **Steven Black's List (PROB)**  
+- **Steven Black's List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt)
 - **Dan Pollock's List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt)
@@ -37,7 +37,7 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt)
 - **ShadowWhisperer's Malware List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt)
-- **NoCoin Filter List** *(blocking cryptojacking)*  
+- **NoCoin Filter List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt)
 - **Dandelion Sprout's Anti-Malware List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt)
@@ -73,7 +73,7 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
 ### 🔹 Additional Privacy & Tracking Filters
 - **AdGuard Tracking Protection filter**  
   [🔗 Link](https://filters.adtidy.org/extension/ublock/filters/3.txt)
-- **EasyPrivacy** *(blocking trackers)*  
+- **EasyPrivacy**  
   [🔗 Link](https://easylist.to/easylist/easyprivacy.txt)
 
 ---
