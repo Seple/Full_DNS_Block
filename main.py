@@ -6,7 +6,7 @@ from collections import defaultdict
 
 # Pliki zawierające listy jako zbiory
 EXCLUDE_LIST_FILE = "Allowed_List.txt"
-NO_OPTIMIZATION_LIST_FILE = "Allowed_Suffix_List.txt"
+NO_OPTIMIZATION_LIST_FILE = "No_Optimization_List.txt"
 
 # Nazwy plików wyjściowych
 OUTPUT_FILE = "Full_DNS_Block.txt"
