@@ -77,8 +77,6 @@ A collection of popular filter lists for blocking ads, malware, phishing, and ot
   [🔗 Link](https://easylist.to/easylist/easyprivacy.txt)
 
 ---
-💡 **Usage Instructions:** Add the above links to your ad-blocking tool (e.g., AdGuard, Pi-hole, uBlock Origin) and enjoy enhanced protection against unwanted content! 🎯
----
 
 ## ✅ Allowed Domains
 
