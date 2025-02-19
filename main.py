@@ -4,18 +4,18 @@ import datetime
 import os
 from collections import defaultdict
 
-# Pliki zawierające listy jako zbiory
+
 EXCLUDE_LIST_FILE = "Allowed_List.txt"
 NO_OPTIMIZATION_LIST_FILE = "No_Optimization_List.txt"
 
-# Nazwy plików wyjściowych
+
 OUTPUT_FILE = "Full_DNS_Block.txt"
 OPTIMIZATION_LOG_FILE = "Optimization_suggestion.txt"
 
-# Stała wartość progu subdomen
+
 THRESHOLD = 100
 
-# Lista URLi do pobrania (można edytować w pliku zewnętrznym)
+
 urls = [
     # 1Hosts Pro
     "https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Pro/adblock.txt",
@@ -77,10 +77,9 @@ def load_set_from_file(filepath):
         return set()
     
     with open(filepath, "r", encoding="utf-8") as file:
-        return {line.strip() for line in file if line.strip()}  # Usuwa puste linie i tworzy zbiór
+        return {line.strip() for line in file if line.strip()} 
 
 
-# Wczytanie `exclude_list` i `no_optimization_list` z plików
 exclude_list = load_set_from_file(EXCLUDE_LIST_FILE)
 no_optimization_list = load_set_from_file(NO_OPTIMIZATION_LIST_FILE)
 
@@ -160,7 +159,6 @@ def optimize_domains(domains):
     return optimized_domains, optimization_results
 
 
-# 🔹 Pobranie i przetworzenie domen
 total_downloaded = 0
 all_domains = set()
 
@@ -177,16 +175,16 @@ for url in urls:
                 all_domains.add(match.group(1))
                 break
 
-# 🔹 Usunięcie domen z `exclude_list`
+
 filtered_domains = {domain for domain in all_domains if not any(domain.endswith(f".{excluded}") or domain == excluded for excluded in exclude_list)}
 
-# 🔹 Optymalizacja domen
+
 final_domains, optimization_suggestions = optimize_domains(remove_subdomains(filtered_domains))
 
-# 🔹 Formatowanie do AdBlock
+
 formatted_domains = {f"||{domain}^" for domain in final_domains}
 
-# 🔹 Zapis do pliku
+
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(generate_header(len(formatted_domains)))
     f.write("\n".join(sorted(formatted_domains)) + "\n")
@@ -195,7 +193,7 @@ with open(OPTIMIZATION_LOG_FILE, "w", encoding="utf-8") as f:
     for domain, count in sorted(optimization_suggestions, key=lambda x: -x[1]):
         f.write(f"{domain}  (usunięto {count} subdomen)\n")
 
-# 🔹 Podsumowanie
+
 print(f"✅ Nowa lista zapisana w {OUTPUT_FILE}")
 print(f"📊 Podsumowanie: Pobranie: {total_downloaded} reguł, Unikalne: {len(all_domains)} reguł, Pozostałe po filtracji: {len(final_domains)} reguł")
 print(f"📄 Plik optymalizacji zapisany w {OPTIMIZATION_LOG_FILE}")
