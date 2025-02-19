@@ -23,7 +23,6 @@ jobs:
       - name: Check if there are commits
         run: |
           if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
-            echo "🚨 Brak commitów w repozytorium, tworzenie pierwszego commita..."
             git config --global user.name "github-actions"
             git config --global user.email "github-actions@github.com"
             git commit --allow-empty -m "🚀 Pierwszy commit po resecie historii"
@@ -48,29 +47,18 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          
-          # Dodajemy pliki do staged area
           git add Optimization_suggestion.txt Full_DNS_Block.txt
 
-          # Sprawdzamy, czy są zmiany
           if ! git diff --staged --quiet; then
-            echo "🛠 Stashing changes before pull..."
             git stash
-            git pull --rebase || (echo "🚨 Błąd rebase, wykonuję git reset --hard"; git reset --hard)
+            git pull --rebase || (git reset --hard)
             git stash pop || echo "🚀 Brak zapisanych zmian do przywrócenia."
-
-            # Jeszcze raz dodajemy pliki, aby uniknąć ich utraty po stash
             git add Optimization_suggestion.txt Full_DNS_Block.txt
 
-            # Ponowna weryfikacja zmian po odtworzeniu stash
             if ! git diff --staged --quiet; then
               git commit -m "Update blocklist files"
               git push origin main
-            else
-              echo "⚡ Brak zmian do commitowania. Pomijam push."
             fi
-          else
-            echo "⚡ Brak zmian do commitowania. Pomijam push."
           fi
 
       - name: Force delete old workflow runs
@@ -79,8 +67,6 @@ jobs:
           RUNS_TO_DELETE=$(gh run list --limit 100 --json databaseId --jq '.[24:] | .[].databaseId')
           if [[ -n "$RUNS_TO_DELETE" ]]; then
             echo "$RUNS_TO_DELETE" | xargs -I {} gh run delete {}
-          else
-            echo "✅ Brak workflow runs do usunięcia."
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
