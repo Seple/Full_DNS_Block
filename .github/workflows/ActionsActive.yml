@@ -2,12 +2,12 @@ name: Keep GitHub Actions Active
 
 on:
   schedule:
-    - cron: "0 4 * * *"  # Uruchamia codziennie o 4:00 rano
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 concurrency:
   group: keep-alive
-  cancel-in-progress: false  # Nie anuluje trwających uruchomień
+  cancel-in-progress: false
 
 jobs:
   keep-alive:
@@ -26,7 +26,6 @@ jobs:
         run: |
           LAST_COMMIT=$(git log -1 --pretty=%B)
           if [[ "$LAST_COMMIT" == "Keep GitHub Actions alive" ]]; then
-            echo "🚀 Ostatni commit jest taki sam. Pomijam commit."
             exit 0
           fi
 
