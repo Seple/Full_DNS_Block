@@ -5,6 +5,10 @@ on:
     - cron: '0 */1 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: generate-adblock
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,6 +19,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Check if there are commits
+        run: |
+          if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
+            echo "🚨 Brak commitów w repozytorium, tworzenie pierwszego commita..."
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+            git commit --allow-empty -m "🚀 Pierwszy commit po resecie historii"
+            git push origin main
+            exit 0
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -35,6 +50,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add Optimization_suggestion.txt Full_DNS_Block.txt
           if ! git diff --staged --quiet; then
+            git pull --rebase
             git commit -m "Update blocklist files"
             git push origin main
           fi
