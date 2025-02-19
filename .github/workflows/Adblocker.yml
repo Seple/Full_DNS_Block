@@ -54,11 +54,21 @@ jobs:
 
           # Sprawdzamy, czy są zmiany
           if ! git diff --staged --quiet; then
+            echo "🛠 Stashing changes before pull..."
             git stash
             git pull --rebase || (echo "🚨 Błąd rebase, wykonuję git reset --hard"; git reset --hard)
             git stash pop || echo "🚀 Brak zapisanych zmian do przywrócenia."
-            git commit -m "Update blocklist files"
-            git push origin main
+
+            # Jeszcze raz dodajemy pliki, aby uniknąć ich utraty po stash
+            git add Optimization_suggestion.txt Full_DNS_Block.txt
+
+            # Ponowna weryfikacja zmian po odtworzeniu stash
+            if ! git diff --staged --quiet; then
+              git commit -m "Update blocklist files"
+              git push origin main
+            else
+              echo "⚡ Brak zmian do commitowania. Pomijam push."
+            fi
           else
             echo "⚡ Brak zmian do commitowania. Pomijam push."
           fi
