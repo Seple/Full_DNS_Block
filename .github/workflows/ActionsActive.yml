@@ -2,8 +2,12 @@ name: Keep GitHub Actions Active
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 4 * * *"  # Uruchamia codziennie o 4:00 rano
   workflow_dispatch:
+
+concurrency:
+  group: keep-alive
+  cancel-in-progress: false  # Nie anuluje trwających uruchomień
 
 jobs:
   keep-alive:
@@ -14,6 +18,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Pull latest changes
+        run: git pull --rebase origin main || true
 
       - name: Check last commit
         run: |
@@ -28,4 +35,4 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git commit --allow-empty -m "Keep GitHub Actions alive"
-          git push origin main
+          git push origin main || (git pull --rebase origin main && git push origin main)
