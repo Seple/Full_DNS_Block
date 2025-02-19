@@ -48,13 +48,19 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          
+          # Dodajemy pliki do staged area
           git add Optimization_suggestion.txt Full_DNS_Block.txt
+
+          # Sprawdzamy, czy są zmiany
           if ! git diff --staged --quiet; then
             git stash
-            git pull --rebase
+            git pull --rebase || (echo "🚨 Błąd rebase, wykonuję git reset --hard"; git reset --hard)
             git stash pop || echo "🚀 Brak zapisanych zmian do przywrócenia."
             git commit -m "Update blocklist files"
             git push origin main
+          else
+            echo "⚡ Brak zmian do commitowania. Pomijam push."
           fi
 
       - name: Force delete old workflow runs
