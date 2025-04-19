@@ -10,7 +10,7 @@ NO_OPTIMIZATION_LIST_FILE = "No_Optimization_List.txt"
 OUTPUT_FILE = "Full_DNS_Block.txt"
 OPTIMIZATION_LOG_FILE = "Optimization_suggestion.txt"
 
-THRESHOLD = 100
+THRESHOLD = 50
 
 urls = [
     # 1Hosts Pro
