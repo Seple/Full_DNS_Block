@@ -60,7 +60,7 @@ urls = [
     # HaGeZi's safesearch not supported DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
     # HaGeZi's The World's Most Abused TLDs ??? test agresive ???
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock.txt",
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     # HaGeZi's Threat Intelligence Feeds DNS Blocklist MEDIUM
     # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
     # HaGeZi's Threat Intelligence Feeds DNS Blocklist FULL
