@@ -47,8 +47,6 @@ urls = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
     # HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
-    # Phishing Army
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
     # HaGeZi's Anti-Piracy Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt",
     # AdGuard Tracking Protection filter
@@ -67,16 +65,17 @@ urls = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
 ]
 
+direct_domain_urls = [
+    # Phishing Army
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
+]
 
 def load_set_from_file(filepath):
-    """Wczytuje dane z pliku .txt i zwraca je jako zbiór."""
     if not os.path.exists(filepath):
         print(f"⚠️ Plik {filepath} nie istnieje. Zwracam pusty zbiór.")
         return set()
-    
     with open(filepath, "r", encoding="utf-8") as file:
-        return {line.strip() for line in file if line.strip()} 
-
+        return {line.strip() for line in file if line.strip()}
 
 exclude_list = load_set_from_file(EXCLUDE_LIST_FILE)
 no_optimization_list = load_set_from_file(NO_OPTIMIZATION_LIST_FILE)
@@ -90,9 +89,7 @@ valid_patterns = [
     r"^\|\|(\*\.[\w.-]+)\^$",
 ]
 
-
 def fetch_list(url):
-    """Pobiera listę z podanego URL i zwraca linie jako listę."""
     retries = 3
     for attempt in range(retries):
         try:
@@ -108,9 +105,7 @@ def fetch_list(url):
                 print(f"❌ Nie udało się pobrać: {url}")
     return []
 
-
 def remove_subdomains(domains):
-    """Usuwa subdomeny, pozostawiając tylko główne domeny."""
     sorted_domains = sorted(domains, key=lambda d: d.count('.'))
     filtered_domains = set()
     for domain in sorted_domains:
@@ -119,9 +114,7 @@ def remove_subdomains(domains):
             filtered_domains.add(domain)
     return filtered_domains
 
-
 def generate_header(rule_count):
-    """Generuje nagłówek pliku z regułami."""
     timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     return f"""[Adblock Plus]
 ! Title: Full_DNS_Block
@@ -131,48 +124,57 @@ def generate_header(rule_count):
 ! Number of entries: {rule_count}
 """
 
-
 def optimize_domains(domains):
-    """Optymalizuje listę domen poprzez redukcję subdomen."""
     domain_count = defaultdict(int)
     subdomain_map = defaultdict(set)
-
     for domain in domains:
         parts = domain.split('.')
         if len(parts) > 2:
             main_domain = '.'.join(parts[-2:])
             domain_count[main_domain] += 1
             subdomain_map[main_domain].add(domain)
-
     optimized_domains = set(domains)
     optimization_results = []
-
     for main_domain, count in domain_count.items():
         if count > THRESHOLD and main_domain not in domains and main_domain not in no_optimization_list:
             optimized_domains.add(main_domain)
             for subdomain in subdomain_map[main_domain]:
                 optimized_domains.discard(subdomain)
             optimization_results.append((main_domain, count))
-
     return optimized_domains, optimization_results
 
-
 total_downloaded = 0
-all_domains = set()
+all_raw_lines = []
 
 for url in urls:
     lines = fetch_list(url)
     total_downloaded += len(lines)
+    all_raw_lines.extend(lines)
+
+for url in direct_domain_urls:
+    lines = fetch_list(url)
+    total_downloaded += len(lines)
     for line in lines:
         line = line.strip()
-        line = re.split(r"[!#;]", line, maxsplit=1)[0].strip()
-        if not line or not (line.startswith("0.0.0.0") or line.startswith("||")):
+        if not line or line.startswith('!'):
             continue
-        for pattern in valid_patterns:
-            match = re.match(pattern, line)
-            if match:
-                all_domains.add(match.group(1))
-                break
+        if not line.startswith("||"):
+            line = f"||{line}^"
+        all_raw_lines.append(line)
+
+all_domains = set()
+for line in all_raw_lines:
+    line = line.strip()
+    line = re.split(r"[!#;]", line, maxsplit=1)[0].strip()
+    if not line:
+        continue
+    if not (line.startswith("0.0.0.0") or line.startswith("||")):
+        continue
+    for pattern in valid_patterns:
+        match = re.match(pattern, line)
+        if match:
+            all_domains.add(match.group(1))
+            break
 
 filtered_domains = {domain for domain in all_domains if not any(domain.endswith(f".{excluded}") or domain == excluded for excluded in exclude_list)}
 final_domains, optimization_suggestions = optimize_domains(remove_subdomains(filtered_domains))
