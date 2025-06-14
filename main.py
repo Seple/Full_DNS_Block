@@ -166,6 +166,8 @@ for line in all_raw_lines:
     line = re.split(r"[!#;]", line, maxsplit=1)[0].strip()
     if not line:
         continue
+    if line.startswith("||") and "^$all" in line:
+        line = re.sub(r"\^\$.*$", "^", line)
     if not (line.startswith("0.0.0.0") or line.startswith("||")):
         continue
     for pattern in valid_patterns:
