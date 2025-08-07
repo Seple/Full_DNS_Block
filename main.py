@@ -60,17 +60,17 @@ urls = [
     # HaGeZi's Threat Intelligence Feeds DNS Blocklist FULL
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
     # TEST ??? EasyList Cookie List test ^$third-party ???
-    "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
+    #"https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
     # AdGuard Tracking Protection filter
-    "https://filters.adtidy.org/extension/ublock/filters/3.txt",
+    #"https://filters.adtidy.org/extension/ublock/filters/3.txt",
     # EasyPrivacy
-    "https://easylist.to/easylist/easyprivacy.txt",
+    #"https://easylist.to/easylist/easyprivacy.txt",
     # EasyList
-    "https://easylist.to/easylist/easylist.txt",
+    #"https://easylist.to/easylist/easylist.txt",
     # EasyList – Social Widgets
-    "https://easylist.to/easylist/fanboy-social.txt",
+    #"https://easylist.to/easylist/fanboy-social.txt",
     # EasyList – Fanboy's Annoyance List
-    "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+    #"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
 ]
 
 direct_domain_urls = [
