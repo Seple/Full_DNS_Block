@@ -70,7 +70,7 @@ urls = [
     # EasyList – Social Widgets
     "https://easylist.to/easylist/fanboy-social.txt",
     # EasyList – Fanboy's Annoyance List
-    "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+    #"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
 ]
 
 direct_domain_urls = [
