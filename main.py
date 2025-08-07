@@ -64,9 +64,9 @@ urls = [
     # AdGuard Tracking Protection filter
     "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     # EasyPrivacy
-    "https://easylist.to/easylist/easyprivacy.txt",
+    #"https://easylist.to/easylist/easyprivacy.txt",
     # EasyList
-    "https://easylist.to/easylist/easylist.txt",
+    #"https://easylist.to/easylist/easylist.txt",
     # EasyList – Social Widgets
     "https://easylist.to/easylist/fanboy-social.txt",
     # EasyList – Fanboy's Annoyance List
