@@ -51,8 +51,6 @@ While this script aggressively blocks unwanted content, the lists below are a co
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt)
 - **HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt)
-- **HaGeZi's Anti-Piracy Blocklist**  
-  [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt)
 - **HaGeZi's Badware Hoster DNS Blocklist**  
   [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt)
 - **HaGeZi's SafeSearch Not Supported DNS Blocklist**  
@@ -61,10 +59,6 @@ While this script aggressively blocks unwanted content, the lists below are a co
    [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock.txt)
 - **HaGeZi's Threat Intelligence Feeds DNS Blocklist**  
   [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt)
-- **AdGuard Tracking Protection filter**  
-  [🔗 Link](https://filters.adtidy.org/extension/ublock/filters/3.txt)
-- **EasyPrivacy**  
-  [🔗 Link](https://easylist.to/easylist/easyprivacy.txt)
 
 ---
 
