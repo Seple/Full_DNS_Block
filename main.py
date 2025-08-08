@@ -65,10 +65,6 @@ urls = [
     "https://easylist.to/easylist/easyprivacy.txt",
     # EasyList
     "https://easylist.to/easylist/easylist.txt",
-    # EasyList – Social Widgets
-    "https://easylist.to/easylist/fanboy-social.txt",
-    # EasyList – Fanboy's Annoyance List
-    # "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
 ]
 
 direct_domain_urls = [
