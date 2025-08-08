@@ -19,43 +19,43 @@ urls = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
     # OISD BIG
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
-    # Peter Lowe's Blocklist
+    # Peter Lowe Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
-    # Steven Black's List
+    # Steven Black List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
-    # Dan Pollock's List
+    # Dan Pollock List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
     # AdGuard DNS filter
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
-    # Malicious URL Blocklist (URLHaus)
+    # Malicious URL Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
-    # ShadowWhisperer's Malware List
+    # ShadowWhisperer Malware List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
     # NoCoin Filter List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
-    # Dandelion Sprout's Anti-Malware List
+    # Dandelion Sprout Anti Malware List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
-    # Phishing URL Blocklist (PhishTank and OpenPhish)
+    # Phishing URL Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
-    # POL: Polish filters for Pi-hole
+    # POL Polish filters for Pi hole
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
-    # XXX Dandelion Sprout's Game Console Adblock List
+    # XXX Dandelion Sprout Game Console Adblock List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
-    # ??? Perflyst and Dandelion Sprout's Smart-TV Blocklist
+    # ??? Perflyst and Dandelion Sprout Smart TV Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
-    # HaGeZi's DynDNS Blocklist
+    # HaGeZi DynDNS Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
-    # HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
+    # HaGeZi Encrypted DNS/VPN/TOR/Proxy Bypass
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
-    # HaGeZi's Badware Hoster DNS Blocklist
+    # HaGeZi Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
-    # HaGeZi's safesearch not supported DNS Blocklist
+    # HaGeZi safesearch not supported DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
-    # HaGeZi's The World's Most Abused TLDs ??? test agresive ???
+    # HaGeZi The World Most Abused TLDs ??? test agresive ???
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
-    # HaGeZi's Threat Intelligence Feeds DNS Blocklist MEDIUM
+    # HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
     # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
-    # HaGeZi's Threat Intelligence Feeds DNS Blocklist FULL
+    # HaGeZi Threat Intelligence Feeds DNS Blocklist FULL
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
     # TEST ??? EasyList Cookie List test ^$third-party ???
     "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
