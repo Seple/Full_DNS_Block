@@ -58,9 +58,9 @@ urls = [
     # HaGeZi Threat Intelligence Feeds DNS Blocklist FULL
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
     # AdGuard Tracking Protection filter
-    "https://filters.adtidy.org/extension/ublock/filters/3.txt",
+    # "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     # EasyPrivacy
-    "https://easylist.to/easylist/easyprivacy.txt",
+    # "https://easylist.to/easylist/easyprivacy.txt",
 ]
 
 direct_domain_urls = [
