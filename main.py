@@ -57,8 +57,6 @@ urls = [
     # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
     # HaGeZi Threat Intelligence Feeds DNS Blocklist FULL
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
-    # TEST ??? EasyList Cookie List test ^$third-party ???
-    "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
     # AdGuard Tracking Protection filter
     "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     # EasyPrivacy
