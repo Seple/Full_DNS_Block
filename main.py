@@ -40,8 +40,8 @@ urls = [
     # POL Polish filters for Pi hole
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
     # XXX Dandelion Sprout Game Console Adblock List
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
-    # ??? Perflyst and Dandelion Sprout Smart TV Blocklist
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
+    # Perflyst and Dandelion Sprout Smart TV Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
     # HaGeZi DynDNS Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
