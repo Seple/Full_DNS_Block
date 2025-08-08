@@ -52,7 +52,7 @@ urls = [
     # HaGeZi's Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
     # HaGeZi's safesearch not supported DNS Blocklist
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
+    #"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
     # HaGeZi's The World's Most Abused TLDs ??? test agresive ???
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     # HaGeZi's Threat Intelligence Feeds DNS Blocklist MEDIUM
