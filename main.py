@@ -32,7 +32,7 @@ urls = [
     # ShadowWhisperer Malware List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
     # NoCoin Filter List
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
     # Dandelion Sprout Anti Malware List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
     # Phishing URL Blocklist
@@ -40,9 +40,9 @@ urls = [
     # Polish filters for Pi hole
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
     # Dandelion Sprout Game Console Adblock List
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
     # Perflyst and Dandelion Sprout Smart TV Blocklist
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
     # HaGeZi DynDNS Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
     # HaGeZi Encrypted DNS/VPN/TOR/Proxy Bypass
@@ -50,7 +50,7 @@ urls = [
     # HaGeZi Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
     # HaGeZi safesearch not supported DNS Blocklist
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
+    # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
     # HaGeZi The World Most Abused TLDs ??? test agresive ???
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     # HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
