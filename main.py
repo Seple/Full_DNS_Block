@@ -48,7 +48,7 @@ urls = [
     # HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
     # HaGeZi's Anti-Piracy Blocklist
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt",
+    #"https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt",
     # HaGeZi's Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
     # HaGeZi's safesearch not supported DNS Blocklist
