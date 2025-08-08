@@ -62,8 +62,6 @@ urls = [
 direct_domain_urls = [
     # Phishing Army
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
-    # CERT.PL Warning List
-    "https://hole.cert.pl/domains/v2/domains.txt",
 ]
 
 def load_set_from_file(filepath):
