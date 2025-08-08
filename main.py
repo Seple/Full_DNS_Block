@@ -38,7 +38,7 @@ urls = [
     # Phishing URL Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
     # Polish filters for Pi hole
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
     # Dandelion Sprout Game Console Adblock List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
     # Perflyst and Dandelion Sprout Smart TV Blocklist
