@@ -61,8 +61,6 @@ urls = [
     "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     # EasyPrivacy
     "https://easylist.to/easylist/easyprivacy.txt",
-    # EasyList
-    "https://easylist.to/easylist/easylist.txt",
 ]
 
 direct_domain_urls = [
