@@ -39,7 +39,7 @@ urls = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
     # POL: Polish filters for Pi-hole
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
-    # Dandelion Sprout's Game Console Adblock List)
+    # XXX Dandelion Sprout's Game Console Adblock List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
     # ??? Perflyst and Dandelion Sprout's Smart-TV Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
@@ -47,8 +47,6 @@ urls = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
     # HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
-    # HaGeZi's Anti-Piracy Blocklist
-    #"https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt",
     # HaGeZi's Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
     # HaGeZi's safesearch not supported DNS Blocklist
