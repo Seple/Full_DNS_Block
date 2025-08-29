@@ -46,6 +46,8 @@ urls = [
 direct_domain_urls = [
     # Phishing Army
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
+    # HaGeZi Blocklist Referral
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/blocklist-referral.txt",
     # Plus
     "https://raw.githubusercontent.com/Seple/Full_DNS_Block/refs/heads/main/Z_Plus.txt",
 ]
