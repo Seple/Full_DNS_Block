@@ -41,9 +41,9 @@ urls = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
     ## HaGeZi safesearch not supported DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
-    # HaGeZi The World Most Abused TLDs Aggressive ## not Aggressive test
+    # HaGeZi The World Most Abused TLDs Aggressive
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
-    # HaGeZi Threat Intelligence Feeds DNS Blocklist FULL ## medium mini test
+    # HaGeZi Threat Intelligence Feeds DNS Blocklist FULL
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
 ]
 
