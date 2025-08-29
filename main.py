@@ -39,8 +39,6 @@ urls = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
     ## HaGeZi Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
-    ## HaGeZi safesearch not supported DNS Blocklist
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
     # HaGeZi The World Most Abused TLDs Aggressive
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     # HaGeZi Threat Intelligence Feeds DNS Blocklist FULL
