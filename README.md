@@ -17,8 +17,6 @@ While this script aggressively blocks unwanted content, the lists below are a co
 
 - **Hagezi PRO**  
   [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
-- **OISD BIG**  
-  [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt)
 - **Steven Black's List**  
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt)
 - **AdGuard DNS filter**  
