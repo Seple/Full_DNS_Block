@@ -43,8 +43,6 @@ While this script aggressively blocks unwanted content, the lists below are a co
   [🔗 Link](https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt)
 - **HaGeZi's Badware Hoster DNS Blocklist**  
   [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt)
-- **HaGeZi's SafeSearch Not Supported DNS Blocklist**  
-  [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt)
 - **HaGeZi's The World's Most Abused TLDs**  
    [🔗 Link](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock.txt)
 - **HaGeZi's Threat Intelligence Feeds DNS Blocklist**  
