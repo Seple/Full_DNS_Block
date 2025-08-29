@@ -15,8 +15,6 @@ THRESHOLD = 100
 urls = [
     # 80000 Hagezi Pro - sa jeszcze mniejsze wersje gdyby ta sprawaila problemy
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
-    # 18000 OISD BIG - zawieszone do testu
-    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
     # 3500 Steven Black List - to prawdopodobnie najlepsza lista
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
     # 6000 AdGuard DNS filter - zawieszone do testu
