@@ -13,11 +13,11 @@ OPTIMIZATION_LOG_FILE = "Optimization_suggestion.txt"
 THRESHOLD = 100
 
 urls = [
-    # 80000 Hagezi Pro - sa jeszcze mniejsze wersje gdyby ta sprawaila problemy
+    # 80000 Hagezi Pro
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
-    # 3500 Steven Black List - to prawdopodobnie najlepsza lista
+    # 3500 Steven Black List
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
-    # 6000 AdGuard DNS filter - zawieszone do testu
+    # 6000 AdGuard DNS filter
     ## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     ## 45 Polish filters for Pi hole - to trzeba sprawdzic dokladnie
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
