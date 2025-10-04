@@ -16,9 +16,9 @@ urls = [
     # Hagezi PRO Normal Light - testuje ale sa ciagłe problemy
     # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
     # AdGuard DNS filter
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     # AWAvenue Ads Rule
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
     # Polish filters for Pi hole
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
     # Steven Black List (FP)
