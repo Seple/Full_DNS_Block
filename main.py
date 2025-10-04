@@ -16,13 +16,13 @@ urls = [
     # Hagezi PRO Normal Light - testuje ale sa ciagłe problemy
     # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
     # AdGuard DNS filter
-    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     # Polish filters for Pi hole
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
     # Steven Black List (FP)
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
     # Peter Lowe Blocklist
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
+    # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
     # Dan Pollock List
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
     # Malicious URL Blocklist
