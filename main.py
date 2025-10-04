@@ -15,8 +15,6 @@ THRESHOLD = 100
 urls = [
     # Hagezi PRO Normal Light - testuje ale sa ciagłe problemy
     # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
-    # OISD Small - nie dodaje dużo z reszta tu obecnych ale zostaje do testów blokowania samych reklam gdy bedziemy szukac podstawy tylko dla reklam
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_5.txt",
     # AdGuard DNS filter
     # "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     # Polish filters for Pi hole
