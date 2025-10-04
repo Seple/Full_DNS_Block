@@ -67,8 +67,7 @@ no_optimization_list = load_set_from_file(NO_OPTIMIZATION_LIST_FILE)
 valid_patterns = [
     r"^0\.0\.0\.0\s+([\w.-]+)$",
     r"^127\.0\.0\.1\s+([\w.-]+)$",
-    r"^\|\|([\w.-]+)\^$",
-    r"^\|\|(\*\.[\w.-]+)\^$",
+    r"^\|\|([\w\.\*\-]+)\^$"
 ]
 
 def fetch_list(url):
