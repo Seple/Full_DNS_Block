@@ -13,7 +13,7 @@ OPTIMIZATION_LOG_FILE = "Optimization_suggestion.txt"
 THRESHOLD = 100
 
 urls = [
-    ## Hagezi PRO czasami probmey z Amazon Prive Video wymaga dalszych testów, jak coś zastąp i testuj OSID, Dan Pollock, EasyList, AdGuard DNS filter
+    ## Hagezi PRO
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
     ## Peter Lowe Blocklist (YoYo List)
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
