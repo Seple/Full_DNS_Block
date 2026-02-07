@@ -17,8 +17,6 @@ urls = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
     ## Peter Lowe Blocklist (YoYo List)
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
-    ## Dandelion Sprout Anti Malware List
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
     ## HaGeZi DynDNS Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
     ## HaGeZi Encrypted DNS/VPN/TOR/Proxy Bypass
