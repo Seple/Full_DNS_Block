@@ -1,4 +1,4 @@
-run.app  (usunięto 706 subdomen)
+run.app  (usunięto 707 subdomen)
 px-cloud.net  (usunięto 327 subdomen)
 adobedc.net  (usunięto 303 subdomen)
 ghost.io  (usunięto 276 subdomen)
