@@ -1,0 +1,72 @@
+name: Generate AdBlock List
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: generate-adblock
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check if there are commits
+        run: |
+          if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+            git commit --allow-empty -m "🚀 Pierwszy commit po resecie historii"
+            git push origin main
+            exit 0
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run the script
+        run: python main.py
+
+      - name: Commit only if files changed
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add Optimization_suggestion.txt Full_DNS_Block.txt
+
+          if ! git diff --staged --quiet; then
+            git stash
+            git pull --rebase || (git reset --hard)
+            git stash pop || echo "🚀 Brak zapisanych zmian do przywrócenia."
+            git add Optimization_suggestion.txt Full_DNS_Block.txt
+
+            if ! git diff --staged --quiet; then
+              git commit -m "Update blocklist files"
+              git push origin main
+            fi
+          fi
+
+      - name: Force delete old workflow runs
+        run: |
+          gh auth setup-git
+          RUNS_TO_DELETE=$(gh run list --limit 100 --json databaseId --jq '.[24:] | .[].databaseId')
+          if [[ -n "$RUNS_TO_DELETE" ]]; then
+            echo "$RUNS_TO_DELETE" | xargs -I {} gh run delete {}
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

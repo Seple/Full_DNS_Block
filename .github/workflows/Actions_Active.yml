@@ -1,0 +1,42 @@
+name: Keep GitHub Actions Active
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check if there are commits
+        run: |
+          if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
+            echo "🚨 Brak commitów w repozytorium, tworzenie pierwszego commita..."
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+            git commit --allow-empty -m "🚀 Pierwszy commit po resecie historii"
+            git push origin main
+            exit 0
+          fi
+
+      - name: Check last commit
+        run: |
+          LAST_COMMIT=$(git log -1 --pretty=%B)
+          if [[ "$LAST_COMMIT" == "Keep GitHub Actions alive" ]]; then
+            echo "✅ Ostatni commit jest taki sam. Pomijam commit."
+            exit 0
+          fi
+
+      - name: Keep GitHub Actions Alive
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git commit --allow-empty -m "Keep GitHub Actions alive"
+          git push origin main

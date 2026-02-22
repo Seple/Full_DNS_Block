@@ -1,0 +1,86 @@
+name: Cleanup Git History
+
+on:
+  schedule:
+    - cron: "0 1 */3 * *"
+  workflow_dispatch:
+
+concurrency:
+  group: cleanup-git-history
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+
+    steps:
+      - name: Checkout repository with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if there are commits
+        run: |
+          if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
+            echo "🚨 Brak commitów w repozytorium. Reset historii pominięty."
+            exit 0
+          fi
+
+      - name: Reset Git history
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          
+          git checkout --orphan temp_branch
+          git commit -m "🚀 Optimization: Reset history" --allow-empty
+          git branch -D main || true
+          git branch -m main
+
+          git push --force origin main
+
+      - name: Cleanup cache
+        run: |
+          echo "🧹 Czyszczenie cache..."
+          rm -rf /home/runner/.cache/pip
+          rm -rf /home/runner/work/_temp/*
+
+      - name: Cleanup Python cache
+        run: |
+          echo "🐍 Czyszczenie cache Pythona..."
+          rm -rf ~/.cache/pip
+          rm -rf ~/.local/lib/python*/site-packages/__pycache__
+          rm -rf /usr/local/lib/python*/dist-packages/__pycache__
+
+      - name: Cleanup system logs
+        run: |
+          echo "🧹 Czyszczenie logów systemowych..."
+          sudo journalctl --vacuum-time=3d || echo "Brak uprawnień sudo, pomijam."
+          sudo journalctl --rotate || echo "Brak uprawnień sudo, pomijam."
+          sudo rm -rf /var/log/*.log* /var/log/journal/* /var/tmp/* || echo "Brak uprawnień do usunięcia plików logów."
+
+      - name: Delete old branches
+        run: |
+          git fetch --prune
+          BRANCHES_TO_DELETE=$(git branch -r --merged | grep -v "main" | sed 's/origin\///')
+          if [[ -n "$BRANCHES_TO_DELETE" ]]; then
+            echo "🗑️ Usuwam stare branche..."
+            echo "$BRANCHES_TO_DELETE" | xargs -I {} git push origin --delete {}
+          else
+            echo "✅ Brak starych branchy do usunięcia."
+          fi
+
+      - name: Delete old artifacts
+        run: |
+          gh auth setup-git
+          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/artifacts --jq '.artifacts[].id')
+          if [[ -n "$ARTIFACTS" ]]; then
+            echo "🗑️ Usuwam stare artefakty..."
+            echo "$ARTIFACTS" | xargs -I {} gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE
+          else
+            echo "✅ Brak artefaktów do usunięcia."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

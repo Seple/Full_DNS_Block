@@ -1,0 +1,54 @@
+name: Save Custom Changes
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: save-custom-changes
+  cancel-in-progress: false
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check if there are commits
+        run: |
+          if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
+            echo "🚨 Brak commitów w repozytorium, tworzenie pierwszego commita..."
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+            git commit --allow-empty -m "🚀 Pierwszy commit po resecie historii"
+            git push origin main
+            exit 0
+          fi
+
+      - name: Commit new changes as base files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add .
+
+          if ! git diff --staged --quiet; then
+            echo "🛠 Stashing changes before pull..."
+            git stash
+            git pull --rebase || (echo "🚨 Błąd rebase, wykonuję git reset --hard"; git reset --hard)
+            git stash pop || echo "🚀 Brak zapisanych zmian do przywrócenia."
+
+            git add .
+
+            if ! git diff --staged --quiet; then
+              git commit -m "📌 Zapisano nowe pliki jako domyślne"
+              git push origin main
+            else
+              echo "⚡ Brak zmian do commitowania. Pomijam push."
+            fi
+          else
+            echo "⚡ Brak zmian do commitowania. Pomijam push."
+          fi
