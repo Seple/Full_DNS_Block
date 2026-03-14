@@ -10,7 +10,7 @@ NO_OPTIMIZATION_LIST_FILE = "No_Optimization_List.txt"
 OUTPUT_FILE = "Full_DNS_Block.txt"
 OPTIMIZATION_LOG_FILE = "Optimization_suggestion.txt"
 
-THRESHOLD = 100
+THRESHOLD = 80
 
 urls = [
     ## Hagezi PRO
@@ -23,7 +23,7 @@ urls = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
     ## HaGeZi Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
-    # HaGeZi The World Most Abused TLDs
+    ## HaGeZi The World Most Abused TLDs
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock.txt",
     ## HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
