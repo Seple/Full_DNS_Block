@@ -1,0 +1,34 @@
+name: Save Custom Changes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Force Save Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add -A
+
+          if ! git diff --staged --quiet; then
+            echo "🛠 Wykryto zmiany, zapisuję..."
+            
+            git commit -m "📌 Zapisano nowe pliki jako domyślne (Ręczny Save)"
+            
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "✅ Brak zmian do zapisania. Wszystko aktualne."
+          fi

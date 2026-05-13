@@ -1,0 +1,45 @@
+name: Cleanup Git History
+
+on:
+  schedule:
+    - cron: "0 1 * * 3"
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Reset Git history
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git config --global init.defaultBranch main
+
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "🚀 Optimization: Reset history to reduce repo size"
+          
+          git branch -D main
+          git branch -m main
+          git push -f origin main
+
+      - name: Delete old artifacts
+        run: |
+          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/artifacts --jq '.artifacts[].id')
+          if [[ -n "$ARTIFACTS" ]]; then
+            echo "$ARTIFACTS" | xargs -I {} gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE &
+            wait
+          else
+            echo "✅ Brak artefaktów."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
