@@ -7,7 +7,9 @@ OUTPUT_FILE = "Full_DNS_Block.txt"
 
 urls = [
     ## Hagezi PRO
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+    ## "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+    ## Hagezi Normal
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt",
     ## Peter Lowe Blocklist (YoYo List)
     ## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
     ## HaGeZi DynDNS Blocklist
