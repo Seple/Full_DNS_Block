@@ -9,7 +9,7 @@ urls = [
     ## Hagezi PRO
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
     ## Peter Lowe Blocklist (YoYo List)
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
+    ## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
     ## HaGeZi DynDNS Blocklist
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
     ## HaGeZi Encrypted DNS/VPN/TOR/Proxy Bypass
