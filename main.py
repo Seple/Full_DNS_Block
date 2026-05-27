@@ -32,8 +32,10 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt",
     ## EasyList
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
-    ## AdGuard Base filter
+    ## AdGuard Base
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
+    ## AdGuard Mobile Ads
+    "https://filters.adtidy.org/extension/ublock/filters/11.txt",
 ]
 
 HOST_SOURCES = [
