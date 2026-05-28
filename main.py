@@ -39,7 +39,11 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## Online Malicious URL Blocklist (AdGuard)
     "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
-	    ## EasyList – Anti AI Suggestions 2
+	## EasyList – Cookie Notices 177
+    "https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt",
+    ## AdGuard Cookie Notices filter 86
+    "https://filters.adtidy.org/extension/ublock/filters/18.txt",
+	## EasyList – Anti AI Suggestions 2
     "https://ublockorigin.pages.dev/thirdparties/easylist-ai.txt",
     ## EasyList – Chat Widgets 21
     "https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-chat.txt",
