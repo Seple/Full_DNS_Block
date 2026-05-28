@@ -37,10 +37,8 @@ ADBLOCK_SOURCES = [
     "https://filters.adtidy.org/extension/ublock/filters/11.txt",
     ## EasyPrivacy
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
-    ## AdGuard/uBO – URL Tracking Protection
-    "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/privacy-removeparam.txt",
-    ## Block Outsider Intrusion into LAN
-    "https://ublockorigin.pages.dev/filters/lan-block.txt",
+	## Online Malicious URL Blocklist (AdGuard)
+    "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
 ]
 
 HOST_SOURCES = [
