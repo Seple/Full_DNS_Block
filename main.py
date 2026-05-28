@@ -36,6 +36,12 @@ ADBLOCK_SOURCES = [
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
     ## AdGuard Mobile Ads
     "https://filters.adtidy.org/extension/ublock/filters/11.txt",
+    ## EasyPrivacy
+    "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
+    ## AdGuard/uBO – URL Tracking Protection
+    "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/privacy-removeparam.txt",
+    ## Block Outsider Intrusion into LAN
+    "https://ublockorigin.pages.dev/filters/lan-block.txt",
 ]
 
 HOST_SOURCES = [
