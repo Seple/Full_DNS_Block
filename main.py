@@ -19,32 +19,30 @@ ADBLOCK_SOURCES = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     ## HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
-    ## uBlock filters – Ads
+    ## uBlock filters – Ads 345
     "https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt",
-    ## uBlock filters – Badware risks
+    ## uBlock filters – Badware risks 2775
     "https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt",
-    ## uBlock filters – Privacy
+    ## uBlock filters – Privacy 80
     "https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt",
-    ## uBlock filters – Quick fixes
+    ## uBlock filters – Quick fixes 6
     "https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.min.txt",
-    ## uBlock filters – Unbreak
+    ## uBlock filters – Unbreak 4
     "https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt",
-    ## EasyList
+    ## EasyList 56252
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
-    ## AdGuard Base
+    ## AdGuard Base 9361
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
-    ## AdGuard Mobile Ads
+    ## AdGuard Mobile Ads 903
     "https://filters.adtidy.org/extension/ublock/filters/11.txt",
-    ## EasyPrivacy
+    ## EasyPrivacy 42539
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
-	## Online Malicious URL Blocklist (AdGuard)
+	## Online Malicious URL Blocklist (AdGuard) 515
     "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
 	## EasyList – Cookie Notices 177
     "https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt",
     ## AdGuard Cookie Notices filter 86
     "https://filters.adtidy.org/extension/ublock/filters/18.txt",
-	## EasyList – Anti AI Suggestions 2
-    "https://ublockorigin.pages.dev/thirdparties/easylist-ai.txt",
     ## EasyList – Chat Widgets 21
     "https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-chat.txt",
     ## EasyList – Newsletter Notices 10
@@ -53,16 +51,12 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt",
     ## EasyList – Annoyances 19
     "https://ublockorigin.pages.dev/thirdparties/easylist-annoyances.txt",
-    ## AdGuard Mobile App Banners filter 1
-    "https://filters.adtidy.org/extension/ublock/filters/20.txt",
     ## AdGuard Other Annoyances filter 10
     "https://filters.adtidy.org/extension/ublock/filters/21.txt",
     ## AdGuard Popups filter 118
     "https://filters.adtidy.org/extension/ublock/filters/19.txt",
     ## AdGuard Widgets filter 33
     "https://filters.adtidy.org/extension/ublock/filters/22.txt",
-	## uBlock filters – Annoyances 1
-    "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/annoyances.min.txt",
 ]
 
 HOST_SOURCES = [
