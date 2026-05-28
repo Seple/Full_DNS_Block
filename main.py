@@ -122,16 +122,20 @@ for line in all_raw_lines:
     line = line.strip()
     if not (line.startswith("||") and "^" in line):
         continue
-    if "$" in line:
-        mod_part = line.split("$", 1)[1]
-        mods = {m.split('=')[0].strip() for m in mod_part.split(",") if m.strip()}
+    parts = line[2:].split('^', 1)
+    domain = parts[0].strip().lower()
+    remainder = parts[1] if len(parts) > 1 else ""
+    if remainder:
+        if not remainder.startswith('$'):
+            continue
+        mod_part = remainder[1:]
+        mods = {m.strip() for m in mod_part.split(",") if m.strip()}
         if not mods.issubset(VALID_MODIFIERS):
             continue
-    domain = line[2:].split('^')[0].strip().lower()
     if not domain or len(domain) > 253 or not all(c in VALID_ASCII_LDH for c in domain) or domain.startswith('.') or domain.endswith('.') or any(not part or len(part) > 63 or part.startswith('-') or part.endswith('-') for part in domain.split('.')):
         continue
-    parts = domain.split('.')
-    if len(parts) >= 2 and all(p.isdigit() for p in parts if p):
+    domain_parts = domain.split('.')
+    if len(domain_parts) >= 2 and all(p.isdigit() for p in domain_parts if p):
         continue
     processed_domains.add(domain)
 
