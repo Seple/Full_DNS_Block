@@ -39,6 +39,26 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## Online Malicious URL Blocklist (AdGuard)
     "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
+	    ## EasyList – Anti AI Suggestions 2
+    "https://ublockorigin.pages.dev/thirdparties/easylist-ai.txt",
+    ## EasyList – Chat Widgets 21
+    "https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-chat.txt",
+    ## EasyList – Newsletter Notices 10
+    "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/thirdparties/easylist-newsletters.txt",
+    ## EasyList – Notifications 22
+    "https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt",
+    ## EasyList – Annoyances 19
+    "https://ublockorigin.pages.dev/thirdparties/easylist-annoyances.txt",
+    ## AdGuard Mobile App Banners filter 1
+    "https://filters.adtidy.org/extension/ublock/filters/20.txt",
+    ## AdGuard Other Annoyances filter 10
+    "https://filters.adtidy.org/extension/ublock/filters/21.txt",
+    ## AdGuard Popups filter 118
+    "https://filters.adtidy.org/extension/ublock/filters/19.txt",
+    ## AdGuard Widgets filter 33
+    "https://filters.adtidy.org/extension/ublock/filters/22.txt",
+	## uBlock filters – Annoyances 1
+    "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/annoyances.min.txt",
 ]
 
 HOST_SOURCES = [
