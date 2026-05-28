@@ -1,6 +1,5 @@
 import requests
 import datetime
-import os
 
 EXCLUDE_LIST_FILE = "Allowed_List.txt"
 OUTPUT_FILE = "Full_DNS_Block.txt"
@@ -55,8 +54,6 @@ REGEX_SOURCES = [
 ]
 
 def load_set_from_file(filepath):
-    if not os.path.exists(filepath):
-        return set()
     with open(filepath, "r", encoding="utf-8") as file:
         return {line.strip() for line in file if line.strip()}
 
