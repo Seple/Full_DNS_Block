@@ -15,48 +15,34 @@ ADBLOCK_SOURCES = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
     ## HaGeZi Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
-    ## HaGeZi The World Most Abused TLDs (TEST Aggressive)
+    ## HaGeZi The World Most Abused TLDs
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     ## HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
-    ## uBlock filters – Ads 345
+    ## uBlock filters – Ads 345 -66
     "https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt",
-    ## uBlock filters – Badware risks 2775
+    ## uBlock filters – Badware risks 2775 -76
     "https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt",
-    ## uBlock filters – Privacy 80
+    ## uBlock filters – Privacy 80 -6
     "https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt",
-    ## uBlock filters – Quick fixes 6
+    ## uBlock filters – Quick fixes 6 -0
     "https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.min.txt",
-    ## uBlock filters – Unbreak 4
+    ## uBlock filters – Unbreak 4 -0
     "https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt",
-    ## EasyList 56252
+    ## EasyList 56252 -2562 orginał jest nowszy ale nie przefiltrowany przez ublock nie wiem czy nie powodouje poroblemów 
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
-    ## AdGuard Base 9361
+    ## AdGuard Base 9361 -76
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
-    ## AdGuard Mobile Ads 903
-    "https://filters.adtidy.org/extension/ublock/filters/11.txt",
-    ## EasyPrivacy 42539
+    ## EasyPrivacy 42539 -24507 orginał to samo
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
-	## Online Malicious URL Blocklist (AdGuard) 515
+	## Online Malicious URL Blocklist (AdGuard) 515 -57
     "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
-	## EasyList – Cookie Notices 177
+	## EasyList – Cookie Notices 177 -135 orginał to samo
     "https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt",
-    ## AdGuard Cookie Notices filter 86
+    ## AdGuard Cookie Notices filter 86 -60
     "https://filters.adtidy.org/extension/ublock/filters/18.txt",
-    ## EasyList – Chat Widgets 21
-    "https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-chat.txt",
-    ## EasyList – Newsletter Notices 10
-    "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/thirdparties/easylist-newsletters.txt",
-    ## EasyList – Notifications 22
-    "https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt",
-    ## EasyList – Annoyances 19
-    "https://ublockorigin.pages.dev/thirdparties/easylist-annoyances.txt",
-    ## AdGuard Other Annoyances filter 10
-    "https://filters.adtidy.org/extension/ublock/filters/21.txt",
-    ## AdGuard Popups filter 118
+    ## AdGuard Popups filter 118 -48
     "https://filters.adtidy.org/extension/ublock/filters/19.txt",
-    ## AdGuard Widgets filter 33
-    "https://filters.adtidy.org/extension/ublock/filters/22.txt",
 ]
 
 HOST_SOURCES = [
