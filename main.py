@@ -38,10 +38,6 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## Online Malicious URL Blocklist (AdGuard) 515 -57
     ## "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
-	## EasyList – Cookie Notices 177 -135
-    ## "https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt",
-    ## AdGuard Cookie Notices filter 86 -60
-    ## "https://filters.adtidy.org/extension/ublock/filters/18.txt",
     ## AdGuard Popups filter 118 -48
     ## "https://filters.adtidy.org/extension/ublock/filters/19.txt",
 	## TEST 2222
