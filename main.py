@@ -30,11 +30,11 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.min.txt",
     ## uBlock filters – Unbreak 4 -0
     "https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt",
-    ## EasyList 56252 -2562 orginał jest nowszy ale nie przefiltrowany przez ublock nie wiem czy nie powodouje poroblemów 
+    ## EasyList 56252 -2562
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
     ## AdGuard Base 9361 -76
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
-    ## EasyPrivacy 42539 -24507 orginał to samo
+    ## EasyPrivacy 42539 -24507
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## Online Malicious URL Blocklist (AdGuard) 515 -57
     ## "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
