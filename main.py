@@ -26,10 +26,6 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt",
     ## uBlock filters – Privacy 80 -6
     "https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt",
-    ## uBlock filters – Quick fixes 6 -0
-    "https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.min.txt",
-    ## uBlock filters – Unbreak 4 -0
-    "https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt",
     ## EasyList 56252 -2562
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
     ## AdGuard Base 9361 -76
