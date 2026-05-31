@@ -49,8 +49,6 @@ ADBLOCK_SOURCES = [
     "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
     ## KAD - Przekrety 3613
     "https://raw.githubusercontent.com/FiltersHeroes/KAD/master/KAD.txt",
-    ## Polskie Filtry Prywatności 120 date??? 2022rok???
-    ## "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/adblock.txt",
     ## AdGuard Tracking Protection filter 38189
     "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     ## Dandelion Sprout's Anti-Malware List 626
