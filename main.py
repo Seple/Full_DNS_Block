@@ -57,6 +57,12 @@ ADBLOCK_SOURCES = [
     "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt",
 ]
 
+# WARNING: HOST_SOURCES
+# HOST = lower precision, more false positives than Adblock filters
+# Threat feeds: malware/phishing/ransomware/0-day (URLhaus, ThreatFox, Phishing Army, etc.)
+# Rapid Threat Response: fast rotation, not a base for quality filters
+# Rules: no ads/general filters; more feeds = larger list, lower performance
+
 HOST_SOURCES = [
     ## Phishing Army
     ## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
