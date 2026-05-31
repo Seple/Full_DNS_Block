@@ -19,6 +19,7 @@ ADBLOCK_SOURCES = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     ## HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
+	## TEST
     ## uBlock filters – Ads 345 -66
     "https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt",
     ## uBlock filters – Badware risks 2775 -76
@@ -36,13 +37,13 @@ ADBLOCK_SOURCES = [
     ## EasyPrivacy 42539 -24507 orginał to samo
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## Online Malicious URL Blocklist (AdGuard) 515 -57
-    "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
+    ## "https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt",
 	## EasyList – Cookie Notices 177 -135 orginał to samo
-    "https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt",
+    ## "https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt",
     ## AdGuard Cookie Notices filter 86 -60
-    "https://filters.adtidy.org/extension/ublock/filters/18.txt",
+    ## "https://filters.adtidy.org/extension/ublock/filters/18.txt",
     ## AdGuard Popups filter 118 -48
-    "https://filters.adtidy.org/extension/ublock/filters/19.txt",
+    ## "https://filters.adtidy.org/extension/ublock/filters/19.txt",
 ]
 
 HOST_SOURCES = [
