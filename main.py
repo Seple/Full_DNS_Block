@@ -15,7 +15,7 @@ ADBLOCK_SOURCES = [
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
     ## HaGeZi Badware Hoster DNS Blocklist
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
-    ## HaGeZi The World Most Abused TLDs
+    ## HaGeZi The World Most Abused TLDs Aggressive
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt",
     ## HaGeZi Threat Intelligence Feeds DNS Blocklist MEDIUM
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
