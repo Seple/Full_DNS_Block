@@ -18,7 +18,7 @@ ADBLOCK_SOURCES = [
     ## HaGeZi Threat Intelligence Feeds Medium
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
 	## Peter Lowe (YoYo List)
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
+	## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
 	## EasyPrivacy
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
     ## TEST
