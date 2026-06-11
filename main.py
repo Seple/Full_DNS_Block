@@ -21,13 +21,12 @@ ADBLOCK_SOURCES = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
 	## EasyPrivacy
     "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
-	## # EasyList
+	## EasyList
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
-	## TEST
-	## # AdGuard Base
+	## AdGuard Base
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
-	## AdGuard Tracking Protection
 	## TEST
+	## AdGuard Tracking Protection
     ## Dandelion Sprout's Anti-Malware
     "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt",
 ]
