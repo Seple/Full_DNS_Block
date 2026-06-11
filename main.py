@@ -20,7 +20,7 @@ ADBLOCK_SOURCES = [
 	## Peter Lowe (YoYo List)
 	## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
 	## EasyPrivacy
-    "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
+	## "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
     ## TEST
 	## # EasyList
 	## "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
