@@ -33,6 +33,8 @@ While this script blocks a wide range of unwanted content, the lists below are a
 
 [EasyList](https://ublockorigin.pages.dev/thirdparties/easylist.txt)
 
+[AdGuard Base](https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt)
+
 [Peter Lowe (YoYo List)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
 
 [Dandelion Sprout's Anti-Malware](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt)
