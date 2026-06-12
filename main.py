@@ -27,6 +27,7 @@ ADBLOCK_SOURCES = [
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
 	## TEST
 	## AdGuard Tracking Protection
+    "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     ## Dandelion Sprout's Anti-Malware
     "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt",
 ]
