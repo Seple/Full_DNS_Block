@@ -22,11 +22,11 @@ ADBLOCK_SOURCES = [
 	## Peter Lowe (YoYo List)
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
 	## EasyPrivacy
-	## "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
+    "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## EasyList
-	## "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
+    "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
 	## AdGuard Base
-	## "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
+    "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
 	## # TEST AdGuard Tracking Protection
 	## "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     ## Dandelion Sprout's Anti-Malware
