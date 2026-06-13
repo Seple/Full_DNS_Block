@@ -6,7 +6,7 @@ OUTPUT_FILE = "Full_DNS_Block.txt"
 
 ADBLOCK_SOURCES = [
     ## HaGeZi PRO
-    ## "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
     ## HaGeZi Dynamic DNS
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
     ## HaGeZi Encrypted DNS/DoH/VPN/TOR/Proxy Bypass
