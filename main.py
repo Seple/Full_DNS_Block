@@ -7,6 +7,8 @@ OUTPUT_FILE = "Full_DNS_Block.txt"
 ADBLOCK_SOURCES = [
     ## HaGeZi PRO
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+	## # TEST AdGuard DNS filter
+	## "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     ## HaGeZi Dynamic DNS
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
     ## HaGeZi Encrypted DNS/DoH/VPN/TOR/Proxy Bypass
@@ -25,7 +27,7 @@ ADBLOCK_SOURCES = [
     "https://ublockorigin.pages.dev/thirdparties/easylist.txt",
 	## AdGuard Base
     "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
-	## # AdGuard Tracking Protection TEST
+	## # TEST AdGuard Tracking Protection
 	## "https://filters.adtidy.org/extension/ublock/filters/3.txt",
     ## Dandelion Sprout's Anti-Malware
     "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt",
