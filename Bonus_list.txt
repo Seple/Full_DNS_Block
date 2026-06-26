@@ -1,0 +1,3 @@
+||googleadservices.com^
+||adservice.google.com^
+||doubleclick.net^
