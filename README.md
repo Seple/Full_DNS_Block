@@ -35,6 +35,16 @@ This script simply automates their retrieval and merging to enhance aggressivene
 In some cases, the balanced set of blocklists may allow certain domains to pass through.  
 When this happens, additional lists are temporarily enabled to verify whether the domain appears in other sources. This helps with easier identification of issues and reporting them to the relevant list maintainers.
 
+For example:
+
+[Peter Lowe (YoYo List)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
+
+[Phishing Army](https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt)
+
+[EasyPrivacy](https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt)
+
+And more...
+
 ---
 
 
