@@ -13,7 +13,7 @@ This script is designed for users who want control over their network security a
 
 <h2 align="center">📜 Filter List Collection </h2>
 
-This collection includes carefully selected popular and proven filter lists. All sources are regularly updated and maintained by reputable providers. The goal of this set of lists is to ensure maximum effectiveness with minimal disruptions. Blocking that you do not feel on a daily basis. A balance between effectiveness and stability.
+This collection includes carefully selected popular and proven filter lists. All sources are regularly updated and maintained by reputable providers. The intention of this set of lists is to ensure maximum effectiveness with minimal disruptions. Blocking that you do not feel on a daily basis. A balance between effectiveness and stability.
 
 * [HaGeZi PRO](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
 
