@@ -1,4 +1,4 @@
-# 🛡 FULL DNS BLOCK 🛡
+<center><h1>🛡️ FULL DNS BLOCK 🛡️</h1></center>
 
 This script is designed for users who want control over their network security and privacy. It automatically fetches and combines various publicly available DNS blocklists to create a balanced yet effective list that blocks unwanted domains, including ads, trackers, malware, and phishing sites.
 
