@@ -45,6 +45,7 @@ This collection includes carefully selected popular and proven filter lists. All
 >
 >  * And many others...
 
+The [HaGeZi Most Abused TLDs Aggressive](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt) list included in this compilation carries the highest risk of issues but, at the same time, it provides the best size optimization and significantly improves security. Therefore, I only introduce exceptions as a last resort when the domain is not on the basic [HaGeZi Most Abused TLDs](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock.txt) list. This strategy allows for fine tuning a balanced variant that serves as a compromise between the normal and aggressive versions.
 ---
 
 
