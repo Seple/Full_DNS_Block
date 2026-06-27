@@ -9,7 +9,7 @@ This script simply automates their retrieval and merging to enhance aggressivene
 
 ---
 
-## 📜 Filter List Collection
+<h2 align="center">📜 Filter List Collection </h2>
 
 * [HaGeZi PRO](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
 
