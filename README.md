@@ -13,6 +13,8 @@ This script is designed for users who want control over their network security a
 
 <h2 align="center">📜 Filter List Collection </h2>
 
+...
+
 * [HaGeZi PRO](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
 
 * [HaGeZi Dynamic DNS](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt)
