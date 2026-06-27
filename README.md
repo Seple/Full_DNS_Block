@@ -4,8 +4,10 @@ This script is designed for users who want control over their network security a
 
 > [!CAUTION]
 > This script does not create its own blocklists. Instead, it relies on publicly available lists maintained by external authors.
-**All rights to these lists belong to their respective creators**❗
-This script simply automates their retrieval and merging to enhance aggressiveness while reducing the final file size for practical use.
+> 
+> **All rights to these lists belong to their respective creators**❗
+> 
+> This script simply automates their retrieval and merging to enhance aggressiveness while reducing the final file size for practical use.
 
 ---
 
