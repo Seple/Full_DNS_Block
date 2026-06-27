@@ -1,3 +1,4 @@
 ||googleadservices.com^
 ||adservice.google.com^
 ||doubleclick.net^
+||springserve.com^
