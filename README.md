@@ -36,13 +36,13 @@ When this happens, additional lists are temporarily enabled to verify whether th
 >
 > Example additional lists:
 >
-> * [Peter Lowe (YoYo List)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
+>  * [Peter Lowe (YoYo List)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
 >
-> * [Phishing Army](https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt)
+>  * [Phishing Army](https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt)
 >
-> * [EasyPrivacy](https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt)
+>  * [EasyPrivacy](https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt)
 >
-> * And many others...
+>  * And many others...
 
 ---
 
