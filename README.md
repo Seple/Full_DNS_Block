@@ -33,8 +33,7 @@ This collection includes carefully selected popular and proven filter lists. All
 > [!IMPORTANT]
 > Temporary Extended Filtering
 > 
-> In some cases, a balanced set of blocklists may allow certain disallowed domains to pass through.
-When this happens, additional lists are temporarily enabled to verify whether the domain appears in other sources. This helps with easier identification of issues and reporting them to the relevant list maintainers.
+> In some cases, a balanced set of blocklists may allow certain disallowed domains to pass through. When this happens, I temporarily enable additional lists to verify whether the domain appears in other sources. This helps me easily identify issues and report them to the relevant list maintainers.
 >
 > Example additional lists:
 >
