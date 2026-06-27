@@ -18,7 +18,7 @@ ADBLOCK_SOURCES = [
     ## HaGeZi Threat Intelligence Feeds Medium
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
 	## Bonus_list
-    "https://raw.githubusercontent.com/Seple/Full_DNS_Block/refs/heads/main/Bonus_list.txt",
+	## "https://raw.githubusercontent.com/Seple/Full_DNS_Block/refs/heads/main/Bonus_list.txt",
 	## EasyPrivacy
 	## "https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt",
 	## Peter Lowe (YoYo List)
