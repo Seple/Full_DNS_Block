@@ -45,4 +45,4 @@ When this happens, additional lists are temporarily enabled to verify whether th
 ---
 
 
-### 🚧 **Please be understanding the project is under development** 🚧
+<h3 align="center">🚧 **Please be understanding the project is under development** 🚧</h3>
