@@ -30,7 +30,7 @@ This collection includes carefully selected popular and proven filter lists. All
 * [HaGeZi DNS Rebind Protection](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adguard/dns-rebind-protection.txt)
 
 
-> [!IMPORTANT]
+> [!NOTE]
 > Temporary Extended Filtering
 > 
 > Blocklists are never perfect, and sometimes they let unwanted domains slip through. In such situations, I temporarily activate additional lists to check if other sources catch the domain. This helps me gather the necessary information and more easily identify issues to report them to the maintainers of the respective lists.
