@@ -11,19 +11,19 @@ This script simply automates their retrieval and merging to enhance aggressivene
 
 ## 📜 Filter List Collection
 
-[HaGeZi PRO](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
+* [HaGeZi PRO](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
 
-[HaGeZi Dynamic DNS](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt)
+* [HaGeZi Dynamic DNS](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt)
 
-[HaGeZi Encrypted DNS/DoH/VPN/TOR/Proxy Bypass](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt)
+* [HaGeZi Encrypted DNS/DoH/VPN/TOR/Proxy Bypass](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt)
 
-[HaGeZi Badware Hoster DNS](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt)
+* [HaGeZi Badware Hoster DNS](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt)
 
-[HaGeZi Most Abused TLDs Aggressive](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt)
+* [HaGeZi Most Abused TLDs Aggressive](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-adblock-aggressive.txt)
 
-[HaGeZi Threat Intelligence Feeds Medium](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt)
+* [HaGeZi Threat Intelligence Feeds Medium](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt)
 
-[HaGeZi DNS Rebind Protection](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adguard/dns-rebind-protection.txt)
+* [HaGeZi DNS Rebind Protection](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adguard/dns-rebind-protection.txt)
 
 
 > [!IMPORTANT]
@@ -34,13 +34,13 @@ When this happens, additional lists are temporarily enabled to verify whether th
 >
 > Example additional lists:
 >
-> [Peter Lowe (YoYo List)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
+> * [Peter Lowe (YoYo List)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt)
 >
-> [Phishing Army](https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt)
+> * [Phishing Army](https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt)
 >
-> [EasyPrivacy](https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt)
+> * [EasyPrivacy](https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt)
 >
-> And many others...
+> * And many others...
 
 ---
 
