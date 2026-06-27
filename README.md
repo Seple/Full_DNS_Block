@@ -43,7 +43,7 @@ Example additional lists:
 
 [EasyPrivacy](https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt)
 
-And others...
+And many others...
 
 ---
 
