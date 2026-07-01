@@ -1,0 +1,3 @@
+! Allowed & Exception List: excluded from blocking and added as whitelist rules using Adblock format: @@||domain^
+!
+@@||sentry.io^
