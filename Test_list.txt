@@ -1,0 +1,2 @@
+! Testing: adding domains to blocklists using Adblock format: ||domain^
+!
