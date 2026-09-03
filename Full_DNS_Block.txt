@@ -2,7 +2,7 @@
 ! Title: Full_DNS_Block
 ! Description: Linked lists to reduce size
 ! Homepage: https://github.com/Seple/Full_DNS_Block
-! Last modified: 2026-09-03 10:04:55 UTC
+! Last modified: 2026-09-03 14:43:32 UTC
 ! Number of entries: 368427
 ||0--4.com^
 ||0--d.com^
