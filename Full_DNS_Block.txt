@@ -2,8 +2,8 @@
 ! Title: Full_DNS_Block
 ! Description: Linked lists to reduce size
 ! Homepage: https://github.com/Seple/Full_DNS_Block
-! Last modified: 2026-10-07 01:48:23 UTC
-! Number of entries: 546878
+! Last modified: 2026-10-07 07:26:32 UTC
+! Number of entries: 546877
 ||0--4.com^
 ||0--d.com^
 ||0-0-0-0-0-0-0-0-0-0-0-0-0-18-0-0-0-0-0-0-0-0-0-0-0-0-0.info^
@@ -299792,7 +299792,6 @@
 ||maihigre.net^
 ||maik-freudenberg.de^
 ||maikekloss.de^
-||mail-ads.google.com^
 ||mail-analytics.by.aok.de^
 ||mail-analytics.plus.aok.de^
 ||mail-appservices.com^
