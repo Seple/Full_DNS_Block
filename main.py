@@ -6,10 +6,8 @@ OUTPUT_FILE = "Full_DNS_Block.txt"
 
 ADBLOCK_SOURCES = [
     ## HaGeZi PRO
-    ## "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
-    ## "https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/pro.txt",
-	## HaGeZi PRO mini -test-
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+    "https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/pro.txt",
     ## HaGeZi Dynamic DNS
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
 	"https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/dyndns.txt",
@@ -34,8 +32,6 @@ OPTIMIZATION_SOURCES = [
 	## HaGeZi PRO++
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
 	"https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/pro.plus.txt",
-	## HaGeZi PRO++ mini -test-
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.mini.txt",
 ]
 
 # WARNING: HOST_SOURCES
