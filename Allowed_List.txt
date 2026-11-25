@@ -1,0 +1,3 @@
+! Allowed: excluding domains from blocklists using Adblock format: @@||domain^
+!
+@@||sentry.io^
